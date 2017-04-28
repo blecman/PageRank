@@ -18,9 +18,9 @@ class App extends Component {
     super();
     this.state = {
       nodes: [
-              {"id": "Alice"},
-              {"id": "Bob"},
-              {"id": "Carol"}
+              {"id": "A"},
+              {"id": "B"},
+              {"id": "C"}
             ],
       links: [
               {"source": 0, "target": 1},
