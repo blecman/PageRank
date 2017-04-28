@@ -116,7 +116,7 @@ class App extends Component {
               <div className="col-md-12">
                 <h2>Step 1: Create/Select Test Data</h2>
                 <p>
-                  It's easiest to understand PageRank using an example. You can either create your own example or select from ones we have already created.
+                  It's easiest to understand PageRank using an example. You can either create your own example or select the one we have already created.
                   Remember, each website is a node, and an edge from $A$ to $B$ means there is a link on page $A$ that goes to page $B$.
                 </p>
               </div>
