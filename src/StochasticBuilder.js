@@ -5,7 +5,7 @@ var c = .85;
 
 class StochasticBuilder extends Component{
 
-    constructor(){
+    constructor(){  
         super();
 
         this.state = {
@@ -150,6 +150,7 @@ class StochasticBuilder extends Component{
                 <button onClick={this.advance}> Advance </button>
                 <div className="row">
                     <div className="col-md-5 col-md-offset-1">
+                        $A$
                         <table className="matrix">
                             <tbody>
                                 {adjacency_rows}
@@ -157,6 +158,7 @@ class StochasticBuilder extends Component{
                         </table>
                     </div>
                     <div className="col-md-4">
+                        $S$
                         <table className="matrix">
                             <tbody>
                                 {stochastic_rows}
@@ -164,12 +166,12 @@ class StochasticBuilder extends Component{
                         </table>
                     </div>
                     <div className="col-md-2">
-                        <center><b>d</b> = {d}</center>
-                        <center><b>c</b> = {c}</center> <br/>
-                        <center><b>A_i_j</b> = {a_i_j}</center>
-                        <center><b>c*A_i_j/d</b> = {a_over_d}</center>
-                        <center><b>(1-c)/n</b> = {c_over_n}</center> <br/>
-                        <center><b>1/n</b> = {n_inverse}</center>
+                        <center><b>$D$</b> = {d}</center>
+                        <center><b>$C$</b> = {c}</center> <br/>
+                        <center><b>{'$A_{ij}$'}</b> = {a_i_j}</center>
+                        <center><b>{'$C*A_{ij}/D$'}</b> = {a_over_d}</center>
+                        <center><b>$(1-C)/N$</b> = {c_over_n}</center> <br/>
+                        <center><b>$1/N$</b> = {n_inverse}</center>
                     </div>
                 </div>
             </div>

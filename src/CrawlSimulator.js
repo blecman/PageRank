@@ -143,7 +143,7 @@ class CrawlSimulator extends Component{
             this.state.matrix[source][target] = 1;
 
             this.setState((prevState, props) => ({
-                currentEdge: prevState.currentEdge + 1
+                currentEdge: prevState.currentEdge + 1,
             }));
         } else {
              console.log("full");
@@ -155,6 +155,9 @@ class CrawlSimulator extends Component{
                     }
                 }
             }
+            this.setState({
+                matrix: this.state.matrix
+            });
         }
     }
 
@@ -212,8 +215,6 @@ class CrawlSimulator extends Component{
 
         return (
             <div>
-                {this.state.currentEdge}<br/><br/>
-                {JSON.stringify(this.state.matrix)}
                 <div className="row">
                     <div className="col-md-6">
                         <button onClick={this.advance}> Advance </button>
